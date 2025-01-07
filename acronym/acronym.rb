@@ -6,7 +6,7 @@ To get started with TDD, see the `README.md` file in your
 `ruby/acronym` directory.
 =end
 module Acronym
-  def self.abbreviate(line)
+  def self.compute(line)
     words = line.scan(/\w+/)
     words.map{|word| word[0].upcase}.join
   end
